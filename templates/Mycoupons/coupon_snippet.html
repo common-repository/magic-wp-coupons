@@ -1,0 +1,101 @@
+<div class="coupon-container coupon-type-code" data-coupon_id="{post_id}" data-coupon_code="{coupon_code}" data-coupon_title="{coupon_title}" data-coupon_discount="{coupon_discount}">
+
+	<span class="{verify_class}" title="This Coupon is Verified by Our Staff"></span>
+
+	<div>
+
+        <div class="float coupon-primary">
+
+            <a href="{store_url}"><img alt="{coupon_title}" class="coupon-image" src="{featured_image}" style="display: block;"></a>
+
+            <p class="coupon-date">Expires: {expiry_date}</p>
+
+        </div>
+
+
+
+        <div class="float coupon-secondary">
+
+            <div style="padding:5px;">
+
+            	<h2>{coupon_title}</h2>
+
+                <p class="coupon-description">{coupon_text_contents}</p>
+
+				
+
+                <div class="coupon_socials">
+
+                    <ul class="social_sharers">
+
+                        <li><a href="javascript:;" onClick="window.open('http://www.facebook.com/sharer/sharer.php?u={coupon_permalink}')" class="facebook share"></a></li>
+
+                        <li><a href="javascript:;" onClick="window.open('http://plus.google.com/share?url={coupon_permalink}')" class="googleplus share"></a></li>
+
+                        <li><a href="javascript:;" onClick="window.open('https://twitter.com/intent/tweet?text={coupon_title}&url={coupon_permalink}')" class="twitter share"></a></li>
+
+                    </ul>
+
+            </div><!--coupon_socials end-->
+
+
+
+                
+
+                <div class="visible-phone">
+
+                    <div style="padding:5px;">
+
+                        <div class="coupon-code-section">
+
+                            <div class="coupon-code">
+
+                                <span class="codeElement" data-coupon-code="{coupon_code}"><a class="copy_to_clipboard" coupon_code="{coupon_code}" post_id="{post_id}" href="{store_url}" target="_blank"> CLICK TO COPY CODE</a></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="float coupon-tertiary hidden-phone">
+
+           
+
+			<div class="coupon-voting-container"> 
+
+                            
+
+                <span class="float coupon-voting-ranking {class_clicks}" id="coupon_clicks{post_id}">{coupon_views}</span>
+
+                
+
+                <span class="float coupon-action approve likes like {class_like}" title="{likes} People Like This" onclick="post_likes(this,'like','{post_id}');"><span class="like_count">{likes}</span></span>
+
+                <span class="float coupon-action deny likes dislike {class_dislike}" title="{dislikes} People Dislike This" onclick="post_likes(this,'dislike','{post_id}');"><span class="dislike_count">{dislikes}</span></span>
+
+			</div>
+
+           
+
+        </div>
+
+        
+
+        <span class="clear"></span>
+
+        
+
+    </div>
+
+</div>

@@ -1,0 +1,127 @@
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+/* Component containers
+----------------------------------*/
+.range_slider_container .ui-widget {
+	font-family: Segoe UI,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.range_slider_container .ui-widget .ui-widget {
+	font-size: 1em;
+}
+.range_slider_container .ui-widget input,
+.range_slider_container .ui-widget select,
+.range_slider_container .ui-widget textarea,
+.range_slider_container .ui-widget button {
+	font-family: Segoe UI,Arial,sans-serif;
+	font-size: 1em;
+}
+.range_slider_container .ui-widget-content {
+	border: 1px solid #666666;
+	background: #000000 url("images/ui-bg_inset-soft_25_000000_1x100.png") 50% bottom repeat-x;
+	color: #ffffff;
+}
+.range_slider_container .ui-widget-content a {
+	color: #ffffff;
+}
+.range_slider_container .ui-widget-header {
+	background: #999999 50% 50% repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+}
+.range_slider_container .ui-widget-header a {
+	color: #ffffff;
+}
+.range_slider_container a:focus{
+	border:none;
+}
+
+/* Interaction states
+----------------------------------*/
+.range_slider_container .ui-state-default,
+.range_slider_container .ui-widget-content .ui-state-default,
+.range_slider_container .ui-widget-header .ui-state-default {
+	border: 1px solid #666666;
+	background: #555555 url("images/ui-bg_glass_20_555555_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #eeeeee;
+}
+.range_slider_container .ui-state-default a,
+.range_slider_container .ui-state-default a:link,
+.range_slider_container .ui-state-default a:visited {
+	color: #eeeeee;
+	text-decoration: none;
+}
+.range_slider_container .ui-state-hover,
+.range_slider_container .ui-widget-content .ui-state-hover,
+.range_slider_container .ui-widget-header .ui-state-hover,
+.range_slider_container .ui-state-focus,
+.range_slider_container .ui-widget-content .ui-state-focus,
+.range_slider_container .ui-widget-header .ui-state-focus {
+	border: 1px solid #59b4d4;
+	background: #0078a3 url("images/ui-bg_glass_40_0078a3_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #ffffff;
+}

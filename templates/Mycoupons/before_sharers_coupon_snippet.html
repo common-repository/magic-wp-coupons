@@ -1,0 +1,23 @@
+<span class="clear"></span>
+<div class="snippet">
+
+    <span class="overlay"></span>
+    <img src="{featured_image}" width="120" height="120" class="featured_image" />    
+    <div class="coupon_detail">
+            <h1>{coupon_discount} :: {coupon_title}</h1>
+            
+            <div class="coupon_code"><a class="copy_to_clipboard" coupon_code="{coupon_code}" post_id="{post_id}" href="{store_url}" target="_blank"> Click to Reveal Coupon Code</a></div>
+            <!--<div class="coupon_code"><a onclick="copy_to_clipboard('{coupon_code}','{post_id}')" href="{store_url}" target="_blank">{coupon_code}</a></div>-->
+            <p>{coupon_text_contents}</p>
+    </div><span class="coupon_views" id="coupon_clicks{post_id}">{coupon_views}</span>
+    
+    <span class="clear"></span>
+    <div class="expiry_date">
+        <strong>Expires: {expiry_date} </strong>
+        <div class="coupon_likes">
+            <a href="javascript:;" onclick="post_likes(this,'like','{post_id}');" class="likes like {class_like}" title="Total Likes">{likes}</a>
+            <a href="javascript:;" onclick="post_likes(this,'dislike','{post_id}');" class="likes dislike {class_dislike}" title="Total Dislikes">{dislikes}</a>
+        </div>
+    </div>
+    
+</div>
